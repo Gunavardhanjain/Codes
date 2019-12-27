@@ -1,0 +1,32 @@
+n=int(input())
+for i in range(n):
+    ndays=int(input())
+    days=input().rstrip(" ").split(" ")
+    #days=[int(k) for k in days_spam]
+    #print(days)
+    
+    summer=0
+    for k in days:
+        summer+=int(k)
+    mile=int(input())
+    calc=mile%summer
+    if(calc==mile):
+        summ=0
+        for j in range(ndays):
+            summ+=int(days[j])
+            if(summ>=mile):
+                print(j+1)
+                break
+    elif(calc==0):
+        for j in range(ndays-1,-1,-1):
+            if(int(days[j])!=0):
+                print(j+1)
+                break
+    else:
+        summ=0
+        for j in range(ndays):
+            summ+=int(days[j])
+            if(summ>=calc):
+                print(j+1)
+                break
+    
