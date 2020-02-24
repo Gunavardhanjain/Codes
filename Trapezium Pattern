@@ -1,0 +1,23 @@
+n=int(input("Enter the no of rows : "))
+left=1
+right=n*n+1
+for i in range(n,0,-1):
+    for j in range(n-i):
+        print(' ',end='   ')
+    for j in range(i):
+        print(left,end=' * ')
+        left+=1
+    for j in range(i-1):
+        print(right,end=' * ')
+        right+=1
+    print(right)
+    right-=2*(i-1)
+
+    
+'''Output:
+Enter the no of rows : 4
+1 * 2 * 3 * 4 * 17 * 18 * 19 * 20
+    5 * 6 * 7 * 14 * 15 * 16
+        8 * 9 * 12 * 13
+            10 * 11
+'''
