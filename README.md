@@ -1,2 +1,2 @@
 # Codes
-All the codes that i felt difficult
+Some of the codes that i felt difficult, but solved.
